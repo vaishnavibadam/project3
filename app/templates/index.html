@@ -1,0 +1,19 @@
+<html>
+ <meta charset="utf-8">
+        {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'app/style.css' %}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<body>
+<form action="" method="post">
+{% csrf_token %}
+{{ form }}
+<input type=submit value=submit >
+</form>
+a
+{% for i in all_values %}
+{{ i.first_name }}
+{{ i.last_name }}
+</br>
+{% endfor %}
+</body>
+</html>
